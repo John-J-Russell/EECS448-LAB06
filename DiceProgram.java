@@ -3,6 +3,8 @@
 //@DATE: 31 March 2016
 //@PURPOSE: Allow user to make and roll a die.
 
+//Lots of code taken from the examples on the wiki
+
 import javax.swing.*;
 import java.awt.Component;
 import java.awt.GridLayout;
@@ -74,6 +76,8 @@ public class DiceProgram implements ActionListener
 		}
 		if(sides>1)
 		{
+			//Random number generator information taken from StackOverflow user
+			//"Greg Case", thank you Greg.
 			Random placeholder= new Random(System.currentTimeMillis()) ;
 			
 			int result= placeholder.nextInt((sides - 1) +1) +1;
